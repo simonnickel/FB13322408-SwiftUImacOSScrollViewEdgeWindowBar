@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 	
-	@State private var selected: Int? = 0
+	@State private var selected: Int? = 1
 	
     var body: some View {
 		NavigationSplitView {
@@ -33,6 +33,8 @@ struct ContentView: View {
 				.navigationTitle("List")
 				// Does only apply on iPadOS
 //				 .toolbarBackground(.visible, for: .automatic)
+				// This does force visible windowBar on macOS, but not on iOS.
+//				.scrollContentBackground(.hidden)
 			}
 		}
 
