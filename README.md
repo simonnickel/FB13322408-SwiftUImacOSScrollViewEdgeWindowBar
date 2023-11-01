@@ -34,6 +34,13 @@ There should be an option to influence the scroll edge behaviour of ScrollView a
 The example contains a SplitView with a List and a ScrollView. Running it on macOS and iPadOS shows the different behaviour.
 
 
+## Workaround
+
+Force visible navigation bar
+iOS: .toolbarBackground(.visible, for: .automatic)
+macOS: .scrollContentBackground(.hidden)
+
+
 ## Tested on 
 
 - macOS  14.0
