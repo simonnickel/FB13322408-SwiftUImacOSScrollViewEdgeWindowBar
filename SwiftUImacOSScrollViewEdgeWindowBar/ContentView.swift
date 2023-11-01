@@ -24,11 +24,15 @@ struct ContentView: View {
 						.frame(maxWidth: .infinity)
 				}
 				.navigationTitle("ScrollView")
+				// Does only apply on iPadOS
+//				 .toolbarBackground(.hidden, for: .automatic)
 			} else {
 				List {
 					Text("List Content")
 				}
 				.navigationTitle("List")
+				// Does only apply on iPadOS
+//				 .toolbarBackground(.visible, for: .automatic)
 			}
 		}
 
